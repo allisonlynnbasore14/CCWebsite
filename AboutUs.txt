@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<title>Cornerstone Candy</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="Home.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="AboutUs.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About Us</a>
+    <a href="Products.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Products</a>
+    <a href="CustomerReviews.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Custom Reviews</a>
+  </div>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- The Contact Section -->
+
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+  <div style="background-color:gray">
+      <h1 style="color:white">About us!</h4>
+  </div>
+    <p class="w3-opacity" style="font-size: 30px;"><i>In case you have not noticed, we love candy!</i></p>
+    <p class="w3-justify" style="font-size: 30px;">Owner: Reba Basore</p>
+    <p class="w3-justify" style="font-size: 30px;">I have always been a fan of the joy that gift giving and candy eating brings. So I put the two together to make Cornerstone Candy. A one stop shop for buying small pakages of candy. I hope you were able to find something yummy to send to a co-worker, a friend, or a significant other. Toddles!</p>
+
+  <div class="w3-row w3-padding-32" style="font-size: 20px;">
+      <div class="w3-third">
+        <img src="http://photos.mycapture.com/HDNW/1429924/40688935E.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <img src="https://pbs.twimg.com/profile_images/551121536359223296/DQA2lUha_400x400.jpeg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <img src="https://weliveentertainment.com/wp-content/uploads/2017/06/Wonder-Woman-Movie-Artwork.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+
+        <p class="w3-justify" style="font-size: 30px;">Location: Burdick, Kansas</p>
+    <p class="w3-justify" style="font-size: 30px;">Cornerstone started in Burdick Kansas! Visit our headquarters at 543 Main Street.</p>
+
+
+
+    <h2 class="w3-wide w3-center">CONTACT US</h2>
+    <p class="w3-opacity w3-center"><i>We love to hear from you!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> 543 Main St, Burdick, KS 66838<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: 785-983-6388<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: cornerstonecandy@gmail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<script>
+function myMap() {
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

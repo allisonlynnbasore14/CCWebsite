@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<title>Cornerstone Candy</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="Home.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="AboutUs.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About Us</a>
+    <a href="Products.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Products</a>
+    <a href="CustomerReviews.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Custom Reviews</a>
+  </div>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <div style="background-color:gray">
+      <h1 style="color:white">Customer Reviews</h4>
+    </div>
+    <p class="w3-opacity" style="font-size: 30px;"><i>We love candy!</i></p>
+    <p class="w3-justify" style="font-size: 30px;">We sell the candy that you cannot live without at a price that you won't believe! We want to spread gift giving and enjoyments so we sell small packages of candy for you giving and recieveing pleasure. Enjoy! Don't forget to treat yourself too!</p>
+    <div class="w3-row w3-padding-32" style="font-size: 20px;">
+      <div class="w3-third">
+        <p>Susan Mellon: "I love Cornerstone Candy so much!"</p>
+        <img src="https://media4.s-nbcnews.com/i/newscms/2016_40/1163163/candy-corn-today-161002-tease-01_0c8becc112d4b2e7c9e791298caa638b.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Ryan Huth: "The price is reasonable and the quality unbelieveable"</p>
+        <img src="https://www.shamusyoung.com/twentysidedtale/images/candy6.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Dumas the Dog: "Woof!"</p>
+        <img src="http://d3vuec9wjh8whu.cloudfront.net/media/catalog/product/cache/1/thumbnail/x450/fb64b0e57a9e14fbd2a6c55962772dab/2/0/206-00001-assorted-gummi-bears-640x402.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+  </div>
+
+  
+<!-- End Page Content -->
+</div>
+
+<script>
+function myMap() {
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

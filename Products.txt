@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<title>Cornerstone Candy</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="Home.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="AboutUs.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About Us</a>
+    <a href="Products.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Products</a>
+    <a href="CustomerReviews.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Custom Reviews</a>
+  </div>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- The Product Section -->
+  <div class="w3-black" id="products">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">Products</h2>
+      <p class="w3-opacity w3-center"><i>Buy them here</i>
+    </div><a href="http://microgifts.weebly.com/"></p><br>
+      <ul class="w3-ul w3-border w3-white w3-text-grey" style="display: flex;justify-content: center;font-size: 30px;">
+        <li class="w3-padding">Small Box<span class="w3-tag w3-red w3-margin-left">105</span></li>
+        <li class="w3-padding">Medium Box <span class="w3-tag w3-red w3-margin-left">80</span></li>
+        <li class="w3-padding">Large Box<span class="w3-tag w3-red w3-margin-left">Sold Out</span></li>
+      </ul>
+      <div style="width: 100%; display: flex;justify-content: center;">
+        <table style="text-align: center; margin: 25px;">
+            <tr>
+              <th>Candy</th>
+              <th>Color</th> 
+              <th>Price Small</th>
+              <th>Price Medium</th>
+              <th>Price Large</th>
+            
+            </tr>
+            <tr >
+              <td>Candy Canes</td>
+              <td>Red/white</td> 
+              <td>$1</td>
+              <td>$2</td>
+              <td>$3</td>
+            </tr>
+
+          </tr>
+            <tr>
+              <td>Candy Corn</td>
+              <td>orange</td> 
+              <td>$0.50</td>
+              <td>$0.75</td>
+              <td>$0.99</td>
+
+          </tr>
+            <tr>
+              <td>Bubble gum</td>
+              <td>pink</td> 
+              <td>$0.50</td>
+              <td>$0.52</td>
+              <td>$50.95</td>
+            </tr>
+          </table>
+        </div>
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/61tYT7-GpFL._SY355_.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Small Box</b></p>
+            <p class="w3-opacity">Rated #1 for cuteness!</p>
+            <p>This package features a tiny gift box with a ribbon. The treat inside is small but adorable!</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Now!</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="http://www.nashvillewrapscommunity.com/blog/wp-content/uploads/2014/02/Everyday-editorial.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Medium Box</b></p>
+            <p class="w3-opacity">Best Quality!</p>
+            <p>This package features a gift box with decoration. The treat inside is the best quality product we have!</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Now!</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://www.raftingcenter.it/var/plain_site/storage/images/media/images/regalo/118193-1-ita-IT/regalo.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Large Box</b></p>
+            <p class="w3-opacity">Best Seller!</p>
+            <p>This package features a gift box with more candy than you will know what to do with. The treat inside is the best enjoyed with friends! The package's volume is 1ft^3</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Now!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- End Page Content -->
+</div>
+
+<script>
+function myMap() {
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
